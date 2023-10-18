@@ -1,0 +1,48 @@
+.prepare-form {
+  width: 100%;
+
+  background: #4C9FFF;
+
+  .prepare-form__container {
+    padding: 100px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 175px;
+  }
+
+  .prepare-form__info {
+    width: 100%;
+  }
+}
+
+.prepare-form__text-info {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.prepare-form__title {
+  h3 {
+    color: #FFF;
+    font-family: Unbounded, sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+  }
+}
+.prepare-form__theme {
+  h5 {
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+.prepare-form__group {
+  color: #FFF;
+  font-family: Inter, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}

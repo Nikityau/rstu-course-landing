@@ -1,0 +1,97 @@
+.course-description__title {
+  h1 {
+    color: #FFF;
+    font-family: Unbounded, sans-serif;
+    font-size: 42.238px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.course-description__subt {
+  margin-top: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .course-description__img {
+    width: 231px;
+    height: 92px;
+
+    border-radius: 107px;
+  }
+
+  .course-description__subt-text {
+    h2 {
+      color: #FFF;
+      font-family: Unbounded, sans-serif;
+      font-size: 101.93px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+.course-description__text {
+  margin-top: 139px;
+
+  max-width: 700px;
+
+  p {
+    color: #FFF;
+    font-family: Unbounded, sans-serif;
+    font-size: 30.697px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.course-description__price-info {
+  max-width: 670px;
+  margin-top: 128px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course-description__price {
+  p {
+    color: #FFF;
+    text-align: center;
+    font-family: Unbounded, sans-serif;
+    font-size: 43.902px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &:nth-child(2) {
+      font-size: 29.14px;
+    }
+  }
+}
+
+.course-description__btn {
+  border-radius: 74px;
+  background: #FFF;
+
+  color: #4C9FFF;
+  font-size: 30.838px;
+  font-weight: 600;
+
+  padding: 20px 40px;
+}
+
+.course-description__descriptor {
+  margin-top: 30px;
+
+  color: #FFF;
+  font-family: Unbounded, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}

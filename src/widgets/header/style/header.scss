@@ -1,0 +1,25 @@
+.header {
+  position: sticky;
+  top: 0;
+
+  height: 80px;
+
+  background: #fff;
+
+  z-index: 10;
+}
+
+.header__container {
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  .header__contact {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+}

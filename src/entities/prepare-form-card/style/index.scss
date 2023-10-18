@@ -1,0 +1,50 @@
+.prepare-form-card {
+  width: 100%;
+
+  padding: 44px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  border-radius: 10px;
+  background: #FFF;
+}
+
+.prepare-form-card__hours {
+  display: flex;
+  align-items: center;
+
+  p {
+    color: #4C9FFF;
+    font-weight: 400;
+
+    &:nth-child(1) {
+      font-family: Unbounded,sans-serif;
+      font-size: 80px;
+    }
+    &:nth-child(2) {
+      font-family: Inter, sans-serif;
+      font-size: 31.494px;
+    }
+  }
+}
+.prepare-form-card__months {
+  color: #A7A7A7;
+  text-align: right;
+  font-family: Unbounded, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.prepare-form-card__addon-info {
+  color: #000;
+  text-align: right;
+  font-family: Unbounded, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

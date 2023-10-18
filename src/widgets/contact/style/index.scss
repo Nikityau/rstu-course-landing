@@ -1,0 +1,40 @@
+.contact {
+  background: #4C9FFF;
+
+  .contact__container {
+    padding-top: 95px;
+    padding-bottom: 110px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 81px;
+  }
+}
+
+.contact__title {
+  h3 {
+    color: #FFF;
+    font-family: Unbounded, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.contact__info {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+
+  .contact__phone,
+  .contact__mail {
+    color: #4C9FFF;
+    font-family: Unbounded, sans-serif;
+    font-size: 19.582px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

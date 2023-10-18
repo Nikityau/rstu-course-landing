@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+  text-decoration: unset;  
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--bg-main);
+}
+
+.app-container {
+  width: calc(100vw - 200px);
+  margin: 0 auto;
+}
+
+.prepare-form_text_lower {
+  .prepare-form__theme {
+    h5 {
+      font-size: 24px;
+    }
+  }
+}

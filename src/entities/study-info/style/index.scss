@@ -1,0 +1,62 @@
+.study-info {
+  margin-top: 129px;
+  margin-bottom: 100px;
+
+
+}
+
+.study-info__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.study-info__info {
+  width: 580px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 73px;
+}
+
+.study-info__title {
+  h3 {
+    color: #000;
+    font-family: Unbounded, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.study-info__docs {
+  color: #4C4C4C;
+  font-family: Inter, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.study-info__addon-info {
+  h5 {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  ul {
+    color: #4C4C4C;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.study-info__map {
+  width: 1095px;
+  height: 597px;
+}
+

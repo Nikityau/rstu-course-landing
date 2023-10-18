@@ -1,0 +1,65 @@
+.swipe-input-exam {
+  width: 100%;
+  height: auto;
+
+  margin-top: 150px;
+
+  display: flex;
+  align-items: center;
+}
+
+.swipe-input-exam__swiper {
+  height: 466px;
+
+  .swiper-slide {
+    .prepare-card {
+      height: 100%;
+
+      transition:  all .3s;
+
+      p {
+        text-align: center;
+        max-width: 390px;
+      }
+    }
+  }
+
+  .swiper-slide-prev,
+  .swiper-slide-next {
+
+    .prepare-card {
+      background: #9ECBFF;
+    }
+  }
+}
+.swipe-input-exam__btn {
+  width: 270px;
+  height: 466px;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
+}
+.swipe-input-exam__btn_right {
+
+  button {
+    transform: rotate(180deg);
+  }
+}
