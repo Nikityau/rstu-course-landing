@@ -21,3 +21,29 @@
     line-height: normal;
   }
 }
+
+@media screen and (max-width: 500px){
+  .prepare-direction {
+    width: 100%;
+  }
+
+  .prepare-direction__info {
+    width: 100%;
+  }
+
+  .prepare-direction__title {
+    h3 {
+      font-size: 1.3em;
+    }
+    h5 {
+      font-size: 1.1em;
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .prepare-direction {
+    margin-top: 68px;
+    margin-bottom: 26px;
+  }
+}

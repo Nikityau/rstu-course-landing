@@ -1,6 +1,8 @@
 import React, {useRef} from 'react';
 import {Swiper as ISwiper} from "swiper/types";
 import {Swiper, SwiperSlide} from "swiper/react";
+import {isMobile} from "react-device-detect";
+import { Pagination } from 'swiper/modules';
 
 import PrepareCard from "../../entities/prepare-card";
 
@@ -8,6 +10,7 @@ import {inputExam} from "./data/input-exam";
 
 import './style/index.scss'
 import 'swiper/css'
+import 'swiper/css/pagination';
 
 const SwipeInputExam = () => {
 
@@ -27,10 +30,16 @@ const SwipeInputExam = () => {
             </div>
             <Swiper
                 className={'swipe-input-exam__swiper'}
-                slidesPerView={3}
+                slidesPerView={
+                    isMobile ? 1 : 3
+                }
                 spaceBetween={20}
                 loop={true}
                 centeredSlides={true}
+                pagination={true}
+                modules={[
+                    Pagination
+                ]}
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper
                 }}

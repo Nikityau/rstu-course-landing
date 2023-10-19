@@ -1,8 +1,6 @@
 .study-info {
   margin-top: 129px;
   margin-bottom: 100px;
-
-
 }
 
 .study-info__container {
@@ -52,6 +50,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    padding-left: 20px;
   }
 }
 
@@ -60,3 +60,39 @@
   height: 597px;
 }
 
+@media screen and (max-width: 500px){
+  .study-info {
+    margin-top: 68px;
+    margin-bottom: 68px;
+  }
+
+  .study-info__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .study-info__info {
+    width: 100%;
+  }
+
+  .study-info__title {
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+  .study-info__docs {
+    font-size: 1.1em;
+  }
+  .study-info__addon-info {
+    h5 {
+      font-size: 1.1em;
+    }
+    ul {
+      font-size: 1em;
+    }
+  }
+
+  .study-info__map {
+    width: 100%;
+    height: 350px;
+  }
+}

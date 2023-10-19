@@ -46,3 +46,37 @@
   font-style: normal;
   font-weight: 400;
 }
+
+@media screen and (max-width: 500px){
+  .prepare-form {
+
+    .prepare-form__container {
+      padding: 46px 0;
+
+      flex-direction: column;
+      gap: 46px;
+    }
+
+    .prepare-form__info {
+
+    }
+  }
+
+  .prepare-form__text-info {
+      gap: 12px;
+  }
+
+  .prepare-form__title {
+    h3 {
+      font-size: 1.7em;
+    }
+  }
+  .prepare-form__theme {
+    h5 {
+      font-size: 1.5em;
+    }
+  }
+  .prepare-form__group {
+    font-size: 1em;
+  }
+}

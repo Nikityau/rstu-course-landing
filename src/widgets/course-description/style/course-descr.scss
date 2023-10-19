@@ -60,3 +60,27 @@
     padding-top: 150px;
   }
 }
+
+@media screen and (max-width: 500px){
+  .course-description {
+    height: 880px;
+
+    .course-description__hand {
+      opacity: 0.2;
+    }
+  }
+
+  .course-description__descr {
+    .course-description__container {
+      width: 100%;
+    }
+  }
+
+  .course-description__test {
+    z-index: 2;
+
+    .course-description__test-c {
+      align-items: center;
+    }
+  }
+}

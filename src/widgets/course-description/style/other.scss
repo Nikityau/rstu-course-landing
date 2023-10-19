@@ -19,6 +19,8 @@
     height: 92px;
 
     border-radius: 107px;
+
+    background-position: center;
   }
 
   .course-description__subt-text {
@@ -101,4 +103,74 @@
   ul {
     padding-left: 20px;
   }
+}
+
+@media screen and (max-width: 500px){
+  .course-description__title {
+    text-align: center;
+
+    h1 {
+     font-size: 1.2em;
+    }
+  }
+
+  .course-description__subt {
+    margin-top: 10px;
+
+    .course-description__img {
+      width: 140px;
+      height: 55px;
+
+      background-position: bottom;
+    }
+
+    .course-description__subt-text {
+      h2 {
+        font-size: 2.2em;
+      }
+    }
+  }
+  .course-description__text {
+
+    padding: 0 25px;
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .course-description__price-info {
+    max-width: none;
+
+    margin-top: 170px;
+    width: calc(100% - 40px);
+  }
+
+  .course-description__price {
+    p {
+      font-size: 1.4em;
+
+      &:nth-child(2) {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .course-description__btn {
+    font-size: 1em;
+
+    padding: 16px 32px;
+  }
+
+  .course-description__descriptor {
+    margin-top: 40px;
+
+    width: calc(100% - 40px);
+
+    font-size: 12px;
+    ul {
+      font-size: 12px;
+    }
+  }
+
 }

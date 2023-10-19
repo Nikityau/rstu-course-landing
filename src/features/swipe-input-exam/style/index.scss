@@ -11,6 +11,23 @@
 .swipe-input-exam__swiper {
   height: 466px;
 
+  .swiper-wrapper {
+    height: 93%;
+  }
+
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      width: 6px;
+      height: 6px;
+
+      transition: all .2s;
+    }
+    .swiper-pagination-bullet-active {
+      width: 34px;
+      border-radius: 6px;
+    }
+  }
+
   .swiper-slide {
     .prepare-card__flip-wrapper {
       height: 100%;
@@ -72,5 +89,62 @@
 
   button {
     transform: rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 500px){
+  .swipe-input-exam {
+    margin-top: 40px;
+  }
+
+  .swipe-input-exam__swiper {
+    height: 360px;
+    overflow: visible;
+
+    .swiper-slide {
+      .prepare-card__flip-wrapper {
+
+      }
+
+      .prepare-card__addon-info {
+        justify-content: space-between;
+        width: calc(100% - 80px);
+        height: calc(100% - 100px);
+
+        padding: 50px 40px;
+      }
+
+      .prepare-card {
+        height: 100%;
+
+        transition:  all .3s;
+
+        p {
+          text-align: center;
+          max-width: 390px;
+        }
+      }
+    }
+
+    .swiper-slide-prev,
+    .swiper-slide-next {
+
+      .prepare-card {
+
+      }
+    }
+  }
+  .swipe-input-exam__btn {
+    display: none;
+
+    button {
+
+    }
+  }
+  .swipe-input-exam__btn_right {
+
+    button {
+
+    }
   }
 }

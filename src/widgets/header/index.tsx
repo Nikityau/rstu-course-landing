@@ -7,6 +7,7 @@ import SignUpBtn from "../../features/sing-up-btn";
 import SiteLink from "../../entities/site-link";
 
 import './style/index.scss'
+import {isMobile} from "react-device-detect";
 
 const Header = () => {
     return (
@@ -15,12 +16,21 @@ const Header = () => {
                 <SiteLink href={'https://www.rgups.ru/'}>
                     <RstuLogo/>
                 </SiteLink>
-                <div className={'header__contact'}>
-                    <Mail mail={'podgot@rgups.ru'}/>
-                    <SiteLink href={'https://www.rgups.ru/zapis-na-podgotovitel-nye-kursy/'}>
-                        <SignUpBtn/>
-                    </SiteLink>
-                </div>
+                {
+                    isMobile
+                        ? <>
+                            <Mail mail={'podgot@rgups.ru'}/>
+                            <SiteLink href={'https://www.rgups.ru/zapis-na-podgotovitel-nye-kursy/'}>
+                                <SignUpBtn/>
+                            </SiteLink>
+                        </>
+                        : <div className={'header__contact'}>
+                            <Mail mail={'podgot@rgups.ru'}/>
+                            <SiteLink href={'https://www.rgups.ru/zapis-na-podgotovitel-nye-kursy/'}>
+                                <SignUpBtn/>
+                            </SiteLink>
+                        </div>
+                }
             </div>
         </header>
     );

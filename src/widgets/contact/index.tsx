@@ -3,12 +3,12 @@ import React from 'react';
 import ContactCard from "../../entities/contact-card";
 import SiteLink from "../../entities/site-link";
 
-import Mail from "../../features/mail";
 
 import './style/index.scss'
 
 import mail_img from './assets/mail.svg'
 import phone_img from './assets/phone.svg'
+import abit_img from './assets/abit.svg'
 
 const Contact = () => {
     return (
@@ -32,7 +32,13 @@ const Contact = () => {
                             </div>
                         </ContactCard>
                     </SiteLink>
-
+                    <SiteLink href={'https://www.rgups.ru/abitur/'}>
+                        <ContactCard icon={abit_img}>
+                            <div className={'contact__mail contact__abit'}>
+                                <p>Поступающим</p>
+                            </div>
+                        </ContactCard>
+                    </SiteLink>
                 </div>
             </div>
         </footer>

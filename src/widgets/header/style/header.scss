@@ -25,3 +25,18 @@
     gap: 50px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .header {
+
+  }
+
+  .header__container {
+    .header__contact {
+      width: 100%;
+
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+}

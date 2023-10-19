@@ -9,7 +9,6 @@
 
 .prepare-card__flip-wrapper-inner_flipped {
   transform: rotateY(-180deg);
-
 }
 
 .prepare-card__flip-wrapper-inner {
@@ -77,7 +76,7 @@
 
   transform: rotateY(180deg);
 
-  width: auto;
+  width: calc(100% - 80px);
   height: calc(100% - 40px);
 
   border-radius: 14px;
@@ -89,6 +88,7 @@
   flex-direction: column;
 
   .prepare-card__addon-wrapper {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -159,4 +159,78 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media screen and (max-width: 500px){
+  .prepare-card__flip-wrapper {
+    overflow: hidden;
+
+
+    max-width: 100%;
+  }
+
+  .prepare-card__flip-wrapper-inner_flipped {
+
+
+  }
+
+  .prepare-card__flip-wrapper-inner {
+
+  }
+
+  .prepare-card {
+    img {
+      width: 40px;
+    }
+
+    p {
+      font-size: .8em;
+      text-align: center;
+    }
+
+    button {
+      font-size: .7em;
+    }
+  }
+
+  .prepare-card__addon-info {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+
+    padding: 10px;
+
+    .prepare-card__addon-wrapper {
+
+    }
+  }
+
+  .prepare-card__addon-title {
+    gap: 5px;
+
+    img {
+      width: 17px;
+    }
+
+    h5 {
+      font-size: .7em;
+    }
+  }
+
+  .prepare-card__close {
+
+    button {
+
+    }
+  }
+
+  .prepare-card__addon-text {
+    font-size: .7em;
+  }
+
+  .prepare-card__download {
+    padding: 6px 8px;
+
+    font-size: .5em;
+
+  }
 }
