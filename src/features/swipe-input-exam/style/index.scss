@@ -12,6 +12,17 @@
   height: 466px;
 
   .swiper-slide {
+    .prepare-card__flip-wrapper {
+      height: 100%;
+    }
+
+    .prepare-card__addon-info {
+      justify-content: space-between;
+      height: calc(100% - 100px);
+
+      padding: 50px 40px;
+    }
+
     .prepare-card {
       height: 100%;
 

@@ -1,6 +1,35 @@
-.prepare-card {
+.prepare-card__flip-wrapper {
+  position: relative;
   width: 100%;
   height: 221px;
+
+  background: transparent;
+  perspective: 1000px;
+}
+
+.prepare-card__flip-wrapper-inner_flipped {
+  transform: rotateY(-180deg);
+
+}
+
+.prepare-card__flip-wrapper-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.prepare-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  backface-visibility: hidden;
+
+  width: 100%;
+  height: 100%;
 
   border-radius: 14px;
   background: #4C9FFF;
@@ -13,11 +42,121 @@
 
   p {
     color: #FFF;
-    text-align: right;
-    font-family: Unbounded,sans-serif;
+    font-family: Unbounded, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
   }
+
+  button {
+    color: #000;
+    font-family: Unbounded, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+
+    padding: 15px 10px;
+
+    border: none;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 8px;
+    background: #FFF;
+
+    cursor: pointer;
+  }
+}
+
+.prepare-card__addon-info {
+  backface-visibility: hidden;
+
+  transform: rotateY(180deg);
+
+  width: auto;
+  height: calc(100% - 40px);
+
+  border-radius: 14px;
+  background: #FFF;
+
+  padding: 20px 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  .prepare-card__addon-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.prepare-card__addon-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  img {
+    width: 32px;
+    filter: invert(1);
+  }
+
+  h5 {
+    color: #000;
+    font-family: Unbounded, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.prepare-card__close {
+  cursor: pointer;
+
+  button {
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+  }
+}
+
+.prepare-card__addon-text {
+  margin-top: 24px;
+
+  color: #000;
+  font-family: Unbounded,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+}
+
+.prepare-card__download {
+  margin-top: 16px;
+
+  padding: 14px 8px;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  border: none;
+
+  border-radius: 8px;
+  background: #4C9FFF;
+
+  cursor: pointer;
+
+  color: #FFF;
+  font-family: Unbounded,sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

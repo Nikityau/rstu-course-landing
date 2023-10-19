@@ -43,6 +43,7 @@ const SwipeInputExam = () => {
                             <PrepareCard
                                 icon={e.icon}
                                 subject={e.subject}
+                                addonInfo={e.addonInfo}
                             />
                         </SwiperSlide>
                     ))

@@ -2,7 +2,7 @@
   position: relative;
 
   width: 100%;
-  height: 926px;
+  height: 950px;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -36,14 +36,27 @@
   justify-content: flex-end;
 
 
-
   .course-description__container {
-    width:  calc(46% - 120px);
+    width:  calc(46%);
     height: auto;
 
     background: #4D9FFF;
+  }
+}
 
-    padding-top: 77px;
-    padding-left: 120px;
+.course-description__test {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  .course-description__test-c {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding-top: 150px;
   }
 }

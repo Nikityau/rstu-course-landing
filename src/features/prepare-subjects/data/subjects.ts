@@ -18,30 +18,54 @@ export const subjects: Subject[] = [
         id: nanoid(),
         icon: math_img,
         subject: 'Математика',
+        addonInfo: {
+            description: 'Lorem ipsum dolor sit amet consectetur. Morbi id ac elementum quam vivamus aliquet. Commodo sit semper adipiscing id odio pellentesque odio.',
+            fileLink: ''
+        },
     },
     {
         id: nanoid(),
         icon: lang_img,
-        subject: 'Русский язык'
+        subject: 'Русский язык',
+        addonInfo: {
+            description: 'Lorem ipsum dolor sit amet consectetur. Morbi id ac elementum quam vivamus aliquet. Commodo sit semper adipiscing id odio pellentesque odio.',
+            fileLink: ''
+        },
     },
     {
         id: nanoid(),
         icon: physic_img,
-        subject: 'Физика'
+        subject: 'Физика',
+        addonInfo: {
+            description: 'Lorem ipsum dolor sit amet consectetur. Morbi id ac elementum quam vivamus aliquet. Commodo sit semper adipiscing id odio pellentesque odio.',
+            fileLink: ''
+        },
     },
     {
         id: nanoid(),
         icon: it_img,
-        subject: 'Информатика и ИКТ'
+        subject: 'Информатика и ИКТ',
+        addonInfo: {
+            description: 'Lorem ipsum dolor sit amet consectetur. Morbi id ac elementum quam vivamus aliquet. Commodo sit semper adipiscing id odio pellentesque odio.',
+            fileLink: ''
+        },
     },
     {
         id: nanoid(),
         icon: world_img,
-        subject: 'Обществознание'
+        subject: 'Обществознание',
+        addonInfo: {
+            description: 'Lorem ipsum dolor sit amet consectetur. Morbi id ac elementum quam vivamus aliquet. Commodo sit semper adipiscing id odio pellentesque odio.',
+            fileLink: ''
+        },
     },
     {
         id: nanoid(),
         icon: history_img,
-        subject: 'История России'
+        subject: 'История России',
+        addonInfo: {
+            description: 'Lorem ipsum dolor sit amet consectetur. Morbi id ac elementum quam vivamus aliquet. Commodo sit semper adipiscing id odio pellentesque odio.',
+            fileLink: ''
+        },
     }
 ]

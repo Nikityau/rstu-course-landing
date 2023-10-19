@@ -13,6 +13,7 @@ const PrepareSubjects = () => {
                         key={s.id}
                         icon={s.icon}
                         subject={s.subject}
+                        addonInfo={s.addonInfo}
                     />
                 ))
             }
