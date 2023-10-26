@@ -35,7 +35,7 @@ module.exports = (env) => {
         },
         output: {
             filename: "js/[name].[contenthash].bundle.js",
-            assetModuleFilename: "assets/[name][ext]",
+            assetModuleFilename: "assets/[ext]/[name][ext]",
             sourceMapFilename: "[name].js.map",
             path: outputPathByDevice(device),
             publicPath: device === "WEBVIEW" ? "./" : "/",
@@ -98,7 +98,7 @@ module.exports = (env) => {
                     use: ['swc-loader']
                 },
                 {
-                    test: /\.(png|jpg|jpeg|gif|svg)$/,
+                    test: /\.(png|jpg|jpeg|gif|svg|json|pdf)$/,
                     type: 'asset/resource'
                 },
             ]

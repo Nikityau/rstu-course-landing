@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Математика",
+    "description": "курс математики",
+    "file": "/assets/.pdf/math.pdf",
+    "icon": "/assets/.svg/math.svg"
+  },
+  {
+    "title": "Физика",
+    "description": "курс физики",
+    "file": "/assets/.pdf/physic.pdf",
+    "icon": "/assets/.svg/physic.svg"
+  },
+  {
+    "title": "Русский язык",
+    "description": "курс русского языка",
+    "file": "/assets/.pdf/ru-lang.pdf",
+    "icon": "/assets/.svg/ru-lang.svg"
+  },
+  {
+    "title": "Информатика и ИКТ",
+    "description": "",
+    "file": null,
+    "icon": "/assets/.svg/it.svg"
+  },
+  {
+    "title": "Обществознание",
+    "description": "",
+    "file": "/assets/.pdf/social.pdf",
+    "icon": "/assets/.svg/social.svg"
+  },
+  {
+    "title": "История России",
+    "description": "",
+    "file": null,
+    "icon": "/assets/.svg/history.svg"
+  }
+]

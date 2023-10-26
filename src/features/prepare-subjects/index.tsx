@@ -1,19 +1,25 @@
 import React from 'react';
-import {subjects} from "./data/subjects";
 import PrepareCard from "../../entities/prepare-card";
+import { useJsonContext } from '../../shared/helpers/hooks/use-json-context';
+import { nanoid } from 'nanoid';
 
 import './style/index.scss'
 
 const PrepareSubjects = () => {
+    const {stateExams} = useJsonContext()
+
     return (
         <section className={'prepare-subjects'}>
             {
-                subjects.map(s => (
+                stateExams?.map(f => (
                     <PrepareCard
-                        key={s.id}
-                        icon={s.icon}
-                        subject={s.subject}
-                        addonInfo={s.addonInfo}
+                        key={nanoid()}
+                        icon={f.icon}
+                        subject={f.title}
+                        addonInfo={{
+                            description: f.description,
+                            fileLink: f.file
+                        }}
                     />
                 ))
             }

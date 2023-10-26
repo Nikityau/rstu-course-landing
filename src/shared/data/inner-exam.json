@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Общий курс железных дорог",
+        "description": "курс математики",
+        "file": null,
+        "icon": "/assets/.svg/train.svg"
+    },
+    {
+        "title": "Безопасность жизнедеятельности",
+        "description": "курс математики",
+        "file": null,
+        "icon": "/assets/.svg/shield.svg"
+    },
+    {
+        "title": "Основы экономики",
+        "description": "курс математики",
+        "file": null,
+        "icon": "/assets/.svg/money.svg"
+    },
+    {
+        "title": "Русский язык",
+        "description": "курс русского языка",
+        "file": null,
+        "icon": "/assets/.svg/ru-lang.svg"
+    },
+    {
+        "title": "Правовые основы профессиональной деятельности",
+        "description": "курс русского языка",
+        "file": null,
+        "icon": "/assets/.svg/law.svg"
+    },
+    {
+        "title": "Основы управленческой деятельности",
+        "description": "курс русского языка",
+        "file": null,
+        "icon": "/assets/.svg/group.svg"
+    },
+    {
+        "title": "Основы рекламной деятельности",
+        "description": "курс русского языка",
+        "file": null,
+        "icon": "/assets/.svg/ad.svg"
+    }
+]

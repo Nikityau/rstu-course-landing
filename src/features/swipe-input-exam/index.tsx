@@ -1,3 +1,4 @@
+import { nanoid } from 'nanoid';
 import React, {useRef} from 'react';
 import {Swiper as ISwiper} from "swiper/types";
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -5,8 +6,8 @@ import {isMobile} from "react-device-detect";
 import { Pagination } from 'swiper/modules';
 
 import PrepareCard from "../../entities/prepare-card";
+import { useJsonContext } from '../../shared/helpers/hooks/use-json-context';
 
-import {inputExam} from "./data/input-exam";
 
 import './style/index.scss'
 import 'swiper/css'
@@ -15,6 +16,7 @@ import 'swiper/css/pagination';
 const SwipeInputExam = () => {
 
     const swiperRef = useRef<ISwiper>()
+    const {innerExams} = useJsonContext()
 
     return (
         <section className={'swipe-input-exam'}>
@@ -45,14 +47,17 @@ const SwipeInputExam = () => {
                 }}
             >
                 {
-                    inputExam.map(e => (
+                    innerExams?.map(e => (
                         <SwiperSlide
-                            key={e.id}
+                            key={nanoid()}
                         >
                             <PrepareCard
                                 icon={e.icon}
-                                subject={e.subject}
-                                addonInfo={e.addonInfo}
+                                subject={e.title}
+                                addonInfo={{
+                                    description: e.description,
+                                    fileLink: e.file
+                                }}
                             />
                         </SwiperSlide>
                     ))
