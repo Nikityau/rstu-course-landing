@@ -26,7 +26,7 @@
   h3 {
     color: #FFF;
     font-family: Unbounded, sans-serif;
-    font-size: 34px;
+    font-size: clamp(20px, 20px + .5vw, 34px);
     font-weight: 400;
   }
 }
@@ -34,7 +34,7 @@
   h5 {
     color: #FFF;
     font-family: Inter, sans-serif;
-    font-size: 40px;
+    font-size: clamp(25px, 25px + .6vw, 40px);
     font-style: normal;
     font-weight: 600;
   }
@@ -42,7 +42,7 @@
 .prepare-form__group {
   color: #FFF;
   font-family: Inter, sans-serif;
-  font-size: 25px;
+  font-size: clamp(12px, 12px + .5vw, 25px);
   font-style: normal;
   font-weight: 400;
 }

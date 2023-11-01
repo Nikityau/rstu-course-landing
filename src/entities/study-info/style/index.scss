@@ -6,6 +6,7 @@
 .study-info__container {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   align-items: flex-start;
 }
 .study-info__info {
@@ -20,7 +21,7 @@
   h3 {
     color: #000;
     font-family: Unbounded, sans-serif;
-    font-size: 32px;
+    font-size: clamp(15px, 15px + .7vw, 32px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -29,7 +30,7 @@
 .study-info__docs {
   color: #4C4C4C;
   font-family: Inter, sans-serif;
-  font-size: 28px;
+  font-size: clamp(20px, 20px + .1vw, 28px);
   font-style: normal;
   font-weight: 500;
   line-height: normal;

@@ -39,10 +39,16 @@
   align-items: center;
   gap: 10px;
 
+  img {
+    width: clamp(40px, 40px + .5vw,60px);
+  }
+
   p {
+    max-width: 90%;
+
     color: #FFF;
     font-family: Unbounded, sans-serif;
-    font-size: 20px;
+    font-size: clamp(10px, 10px + .4vw, 20px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -51,7 +57,7 @@
   button {
     color: #000;
     font-family: Unbounded, sans-serif;
-    font-size: 12px;
+    font-size: clamp(8px, 8px + .4vw, 12px);
     font-style: normal;
     font-weight: 100;
     line-height: normal;
@@ -101,14 +107,14 @@
   gap: 12px;
 
   img {
-    width: 32px;
+    width: clamp(15px, 15px + .5vw,32px);
     filter: invert(1);
   }
 
   h5 {
     color: #000;
     font-family: Unbounded, sans-serif;
-    font-size: 20px;
+    font-size: clamp(10px, 10px + .35vw,20px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -131,7 +137,7 @@
 
   color: #000;
   font-family: Unbounded,sans-serif;
-  font-size: 16px;
+  font-size: clamp(10px, 10px + .2vw, 16px);
   font-style: normal;
   font-weight: 250;
   line-height: normal;
@@ -155,7 +161,7 @@
 
   color: #FFF;
   font-family: Unbounded,sans-serif;
-  font-size: 14px;
+  font-size: clamp(8px, 8px + .2vw, 14px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;

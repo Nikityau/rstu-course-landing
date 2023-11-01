@@ -22,7 +22,7 @@ const App = () => {
             <CourseDescription/>
             <PrepareDirection
                 title={'Направления подготовки'}
-                subtitle={'К ЕГЭ  по предметам'}
+                subtitle={'к ЕГЭ  по предметам'}
             >
                 <PrepareSubjects/>
             </PrepareDirection>
@@ -34,7 +34,7 @@ const App = () => {
             </PrepareForm>
             <PrepareDirection
                 title={'Направления подготовки'}
-                subtitle={'К Внутренним вступительным испытаниям по предметам'}
+                subtitle={'к Внутренним вступительным испытаниям по предметам'}
             >
                 <SwipeInputExam/>
             </PrepareDirection>

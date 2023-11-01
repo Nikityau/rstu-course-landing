@@ -2,7 +2,7 @@
   h1 {
     color: #FFF;
     font-family: Unbounded, sans-serif;
-    font-size: 42.238px;
+    font-size: clamp(20px, 20px + .8vw, 42.238px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -15,35 +15,41 @@
   gap: 20px;
 
   .course-description__img {
-    width: 231px;
-    height: 92px;
+    max-width: 231px;
+    max-height: 92px;
+    width: 15vw;
+    height: 7vh;
 
     border-radius: 107px;
 
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .course-description__subt-text {
     h2 {
       color: #FFF;
       font-family: Unbounded, sans-serif;
-      font-size: 101.93px;
+      font-size: clamp(20px, 45px + 1.3vw, 100px);
       font-style: normal;
       font-weight: 400;
       line-height: normal;
     }
   }
 }
+
 .course-description__text {
   margin-top: 139px;
 
   max-width: 670px;
+  width: 30vw;
 
 
   p {
     color: #FFF;
     font-family: Unbounded, sans-serif;
-    font-size: 30.697px;
+    font-size: clamp(10px, 20px + .1vw, 30.697px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -54,6 +60,8 @@
   width: 100%;
 
   max-width: 670px;
+  width: 30vw;
+
   margin-top: 128px;
 
   display: flex;
@@ -66,13 +74,13 @@
     color: #FFF;
     text-align: center;
     font-family: Unbounded, sans-serif;
-    font-size: 43.902px;
+    font-size: clamp(20px, 20px + .4vw, 43.902px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 
     &:nth-child(2) {
-      font-size: 29.14px;
+      font-size: clamp(15px, 15px + .3vw, 29px);
     }
   }
 }
@@ -82,7 +90,7 @@
   background: #FFF;
 
   color: #4C9FFF;
-  font-size: 30.838px;
+  font-size: clamp(10px, 10px + .4vw, 30px);
   font-weight: 600;
 
   padding: 20px 40px;
@@ -93,24 +101,25 @@
 
   color: #FFF;
   font-family: Unbounded, sans-serif;
-  font-size: 12px;
+  font-size: clamp(6px, 6px + .4vw, 12px);
   font-style: normal;
   font-weight: 200;
   line-height: normal;
 
-  width: 670px;
+  max-width: 670px;
+  width: 30vw;
 
   ul {
     padding-left: 20px;
   }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .course-description__title {
     text-align: center;
 
     h1 {
-     font-size: 1.2em;
+      font-size: 1.2em;
     }
   }
 
@@ -130,7 +139,9 @@
       }
     }
   }
+
   .course-description__text {
+    width: auto;
 
     padding: 0 25px;
 
@@ -168,6 +179,7 @@
     width: calc(100% - 40px);
 
     font-size: 12px;
+
     ul {
       font-size: 12px;
     }

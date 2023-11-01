@@ -26,6 +26,8 @@
 .contact__info {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 55px;
 
   .contact__phone,
