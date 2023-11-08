@@ -9,7 +9,13 @@
 }
 
 .swipe-input-exam__swiper {
+  width: 100%;
   height: 466px;
+
+  .prepare-card__flip-wrapper {
+    height: 420px;
+    text-align: center;
+  }
 
   .swiper-wrapper {
     height: 93%;
