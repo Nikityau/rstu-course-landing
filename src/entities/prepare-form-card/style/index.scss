@@ -53,6 +53,11 @@
   line-height: normal;
 }
 
+.prepare-form-card__price {
+  font-size: 20px;
+}
+
+
 @media screen and (max-width: 500px) {
   .prepare-form-card {
   }
@@ -82,3 +87,4 @@
     font-size: .7em;
   }
 }
+

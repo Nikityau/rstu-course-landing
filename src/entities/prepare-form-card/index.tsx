@@ -6,10 +6,11 @@ export type PrepareFormCardProps = {
     hours: number,
     monthStart: string,
     monthEnd: string,
-    addonInfo?: string
+    addonInfo?: string,
+    price?: string
 }
 
-const PrepareFormCard = ({addonInfo, monthEnd, monthStart, hours}:PrepareFormCardProps) => {
+const PrepareFormCard = ({addonInfo, monthEnd, monthStart, hours, price}:PrepareFormCardProps) => {
     return (
         <div className={'prepare-form-card'}>
             <div className={'prepare-form-card__hours'}>
@@ -23,6 +24,12 @@ const PrepareFormCard = ({addonInfo, monthEnd, monthStart, hours}:PrepareFormCar
                 addonInfo &&
                 <div className={'prepare-form-card__addon-info'}>
                     <p>{addonInfo}</p>
+                </div>
+            }
+            {
+                price &&
+                <div className={'prepare-form-card__addon-info prepare-form-card__price'}>
+                    <p>{price} ₽</p>
                 </div>
             }
         </div>
